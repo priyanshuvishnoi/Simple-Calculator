@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from calculator-f6a8e.firebaseapp.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Mar 2020 16:20:16 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Calculator</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="../ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="../ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <form action="https://calculator-f6a8e.firebaseapp.com/get" class="form" name="form">
+            <input name="textview" id="textview" class="textbox" value=" "><br>
+            <table>
+                <tr>
+                    <td colspan="2" class="td"><input class='button' type="button" value="AC" onclick="clr()"
+                            style="width: 202px" id="AC"></button></td>
+                    <td class="td"><input class='button' type="button" value="<" onclick="backspace()"></button></td>
+                    <td class="td"><input class='button' type="button" value="+" onclick="setVal('+')"></button></td>
+                </tr>
+                <tr>
+                    <td class="td"><input class='button' type="button" value="7" onclick="setVal(7)"></button></td>
+                    <td class="td"><input class='button' type="button" value="8" onclick="setVal(8)"></button></td>
+                    <td class="td"><input class='button' type="button" value="9" onclick="setVal(9)"></button></td>
+                    <td class="td"><input class='button' type="button" value="-" onclick="setVal('-')"></button></td>
+                </tr>
+                <tr>
+                    <td class="td"><input class='button' type="button" value="4" onclick="setVal(4)"></button></td>
+                    <td class="td"><input class='button' type="button" value="5" onclick="setVal(5)"></button></td>
+                    <td class="td"><input class='button' type="button" value="6" onclick="setVal(6)"></button></td>
+                    <td class="td"><input class='button' type="button" value="*" onclick="setVal('*')"></button></td>
+                </tr>
+                <tr>
+                    <td class="td"><input class='button' type="button" value="1" onclick="setVal(1)"></button></td>
+                    <td class="td"><input class='button' type="button" value="2" onclick="setVal(2)"></button></td>
+                    <td class="td"><input class='button' type="button" value="3" onclick="setVal(3)"></button></td>
+                    <td class="td"><input class='button' type="button" value="/" onclick="setVal('index.html')"></button></td>
+                </tr>
+                <tr>
+                    <td class="td"><input class='button' type="button" value="." onclick="setVal('.')"></button></td>
+                    <td class="td"><input class='button' type="button" value="0" onclick="setVal(0)"></button></td>
+                    <td class="td" colspan="2"><input class='button' type="button" value="=" onclick="result()"
+                            style="width: 202px"></button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="__/firebase/7.0.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="__/firebase/7.0.0/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="__/firebase/init.js"></script>
+</body>
+
+
+<!-- Mirrored from calculator-f6a8e.firebaseapp.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Mar 2020 16:20:19 GMT -->
+</html>
